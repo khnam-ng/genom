@@ -1,5 +1,5 @@
 # import argparse
-from Bio import Entrez
+import Bio
 
 #@title FUNCTION: DOWNLOAD_GENOME(organism)
 def download_genome(organism_name):
