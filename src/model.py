@@ -2,8 +2,8 @@
 import tensorflow as tf
 import tensorflow.python.keras.backend as K
 from tensorflow.python.keras.models import Sequential
-from tensorflow.python.keras.layers import Input, Dense, Dropout, LSTM, Embedding, RepeatVector
-from tensorflow.python.keras.callbacks import ModelCheckpoint
+from tensorflow.keras.layers import Input, Dense, Dropout, LSTM, Embedding, RepeatVector
+from tensorflow.keras.callbacks import ModelCheckpoint
 
 def model_creator(X_train, Y_train):
     model = Sequential()

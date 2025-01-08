@@ -1,12 +1,12 @@
 def encode_nucl(nucl):
-  """ Encode a nucleotide into a 2-bit integer
-  :param str nucl: The nucleotide to encode
-  :return (int, int): The encoded nucleotide and its reverse complement
-  """
-  encoded = (ord(nucl) >> 1) & 0b11 # Extract the two bits of the ascii code that represent the nucleotide
-  rencoded = (encoded + 2) & 0b11 # Complement encoding with bit tricks. Avoid slow if statement.
+    """ Encode a nucleotide into a 2-bit integer
+    :param str nucl: The nucleotide to encode
+    :return (int, int): The encoded nucleotide and its reverse complement
+    """
+    encoded = (ord(nucl) >> 1) & 0b11 # Extract the two bits of the ascii code that represent the nucleotide
+    rencoded = (encoded + 2) & 0b11 # Complement encoding with bit tricks. Avoid slow if statement.
 
-  return encoded, rencoded
+    return encoded, rencoded
 
 
 def stream_kmers(seq, k):
